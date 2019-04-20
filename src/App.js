@@ -10,21 +10,34 @@ export class App extends Component {
   }
 
   RenderPlayer = (player) =>{
+
     let newPlayer = {
       id:player.id,
       name:player.name
     }
+
     this.setState({
       Players:[...this.state.Players,newPlayer]
     })
   }
-  
+
+
+   DeletePlayer = (playerID) =>{
+
+    this.setState({
+      Players:[...this.state.Players.filter(player => player.id !== playerID)]
+    })
+
+  }
+
+
   render() {
+    
     return (
       <div className='App'>
         <Header />     
-        <AddPlayer RenderPlayer={this.RenderPlayer} />
-        <PlayersCon Players={this.state.Players} />
+        <AddPlayer RenderPlayer={this.RenderPlayer}  />
+        <PlayersCon Players={this.state.Players} DeletePlayer={this.DeletePlayer} />
       </div>
     )
   }
