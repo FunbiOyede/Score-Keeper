@@ -1,7 +1,7 @@
 import React, { useState} from 'react'
 import '../App.css'
 
-//trying usestate for the first time
+//trying the usestate for the first time
 
 export default function Player(props) {
     let {name, id} = props;
