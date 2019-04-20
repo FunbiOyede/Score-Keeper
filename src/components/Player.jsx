@@ -1,7 +1,7 @@
 import React, { useState} from 'react'
 import '../App.css'
 
-//trying the usestate for the first time
+//trying the usestate feature  for the first time
 
 export default function Player(props) {
     let {name, id} = props;
@@ -15,7 +15,6 @@ export default function Player(props) {
   const Decrement = () =>{
     setCounter(counter-1);
   }
-
 
   return (
     <div className='player' >
