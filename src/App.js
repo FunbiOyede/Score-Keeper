@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Header from './components/Header'
 import AddPlayer from './components/AddPlayer';
-import PlayersCon from './components/PlayersCon';
+import Players from './components/Players';
 import './App.css'
 
 export class App extends Component {
@@ -37,7 +37,7 @@ export class App extends Component {
       <div className='App'>
         <Header />     
         <AddPlayer RenderPlayer={this.RenderPlayer}  />
-        <PlayersCon Players={this.state.Players} DeletePlayer={this.DeletePlayer} />
+        <Players Players={this.state.Players} DeletePlayer={this.DeletePlayer} />
       </div>
     )
   }

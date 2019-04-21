@@ -30,9 +30,9 @@ class AddPlayer extends Component{
     
     render(){
         return(
-            <form onSubmit={this.onSubmit}>
-                <input value={this.state.name} type='text' onChange={this.getPlayerName}/>
-                <button onClick={this.addPlayer}>Add Player</button><br></br>
+            <form onSubmit={this.onSubmit} className='form'>
+                <input value={this.state.name} type='text' onChange={this.getPlayerName} placeholder='Add player' className='input'/>
+                <button onClick={this.addPlayer} className='button'>Add Player</button><br></br>
             </form>
              
         )

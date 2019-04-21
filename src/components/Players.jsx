@@ -1,5 +1,5 @@
 import React from 'react'
-import Player from './Player';
+import Player from './DisplayPlayer';
 
 export default function Players(props) {
   
