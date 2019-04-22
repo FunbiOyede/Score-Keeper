@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class AddPlayer extends Component{
  
     state = {
-
+        name: ''
     }
     
     getPlayerName = (e)=>{

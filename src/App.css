@@ -6,6 +6,7 @@
   font-weight:400;
   background-color: #1630a3;
   padding: 25px;
+  color:rgb(226, 223, 223);
   font-size:20px;
 }
 
@@ -14,12 +15,13 @@
 }
 
 .wrapper {
-  background-color: #61dafb;
+  background-color: #1630a3;
   font-weight: 300;
   font-size: 1.8rem;
   margin: 0  auto 25px;
   max-width: 30rem;
   padding: 0.7rem;
+  color:white
 }
 
 .form{
@@ -31,7 +33,6 @@
 }
 
 .input{
-
     border: 1px solid #e8e8e8;
     flex-grow: 1;
     padding:0.5rem 1.3rem;
